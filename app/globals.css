@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wbx-black: #0a0a0a;
+  --wbx-white: #fafafa;
+  --wbx-accent: #f97316;
+  --wbx-accent-hover: #ea580c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
