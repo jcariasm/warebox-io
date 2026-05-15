@@ -239,7 +239,7 @@ export default function PropinasPage() {
 
       <AdSlot />
 
-      <div className="max-w-[900px] mx-auto px-4 pb-16">
+      <div className="mx-auto mb-16 max-w-[900px] rounded-xl bg-wbx-soft px-4 py-8 text-wbx-ink sm:px-6">
         {/* Calculator */}
         <div className="bg-white rounded-xl p-6 shadow-lg mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

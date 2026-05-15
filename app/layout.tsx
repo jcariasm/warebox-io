@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Warebox.io — Herramientas para viajeros mexicanos en USA | FIFA 2026',
+    default: 'Warebox.io - Travel tools para mexicanos en USA | FIFA 2026',
     template: '%s | Warebox.io',
   },
   description:
@@ -23,10 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <head>
-        {/* AdSense placeholder — replace ca-pub-XXXXXXXXXX with your real ID */}
+        <meta name="theme-color" content="#0b0e11" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Warebox.io" />
+        {/* AdSense placeholder - replace ca-pub-XXXXXXXXXX with your real ID */}
         {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous"></script> */}
       </head>
-      <body className="bg-neutral-50 text-neutral-700 leading-relaxed min-h-screen flex flex-col">
+      <body className="flex min-h-screen flex-col bg-wbx-black text-wbx-body leading-relaxed">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

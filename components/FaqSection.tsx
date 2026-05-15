@@ -8,23 +8,23 @@ interface FaqItem {
 }
 
 export default function FaqSection({ items }: { items: FaqItem[] }) {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
     <section className="mt-10">
-      <h2 className="text-2xl font-extrabold text-wbx-black mb-4 tracking-tight">Preguntas Frecuentes</h2>
-      <div className="space-y-2">
+      <h2 className="mb-4 text-2xl font-semibold tracking-normal text-white">Preguntas frecuentes</h2>
+      <div className="overflow-hidden rounded-xl border border-wbx-elevated bg-wbx-card">
         {items.map((item, i) => (
-          <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
+          <div key={i} className="border-b border-wbx-elevated last:border-b-0">
             <button
-              className="w-full flex justify-between items-center px-5 py-4 text-left font-bold text-[15px]"
+              className="flex w-full items-center justify-between px-5 py-5 text-left text-[15px] font-semibold text-white"
               onClick={() => setOpenIdx(openIdx === i ? null : i)}
             >
               <span>{item.question}</span>
-              <span className="text-xl text-neutral-400 ml-4 shrink-0">{openIdx === i ? '−' : '+'}</span>
+              <span className="ml-4 shrink-0 text-xl text-wbx-accent">{openIdx === i ? '-' : '+'}</span>
             </button>
             <div
-              className={`px-5 text-[15px] text-neutral-500 leading-relaxed transition-all duration-300 overflow-hidden ${
+              className={`overflow-hidden px-5 text-[15px] leading-relaxed text-wbx-muted transition-all duration-300 ${
                 openIdx === i ? 'max-h-80 pb-4' : 'max-h-0'
               }`}
             >

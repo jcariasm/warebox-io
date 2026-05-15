@@ -3,16 +3,74 @@
 @tailwind utilities;
 
 :root {
-  --wbx-black: #0a0a0a;
-  --wbx-white: #fafafa;
-  --wbx-accent: #f97316;
-  --wbx-accent-hover: #ea580c;
+  --wbx-canvas-dark: #0b0e11;
+  --wbx-card-dark: #1e2329;
+  --wbx-elevated-dark: #2b3139;
+  --wbx-primary: #fcd535;
+  --wbx-primary-active: #f0b90b;
+  --wbx-ink: #181a20;
+  --wbx-body: #eaecef;
+  --wbx-muted: #707a8a;
+  --wbx-hairline-light: #eaecef;
+  --wbx-soft-light: #fafafa;
+  --wbx-trading-up: #0ecb81;
+  --wbx-trading-down: #f6465d;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: var(--wbx-canvas-dark);
+  color: var(--wbx-body);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--wbx-primary);
+  color: var(--wbx-ink);
+}
+
+@layer components {
+  .wbx-container {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .wbx-button-primary {
+    @apply inline-flex min-h-10 items-center justify-center rounded-md bg-wbx-accent px-6 py-3 text-sm font-semibold leading-none text-wbx-ink transition-colors hover:bg-wbx-accent-hover focus:outline-none focus:ring-2 focus:ring-wbx-blue/50;
+  }
+
+  .wbx-button-secondary-dark {
+    @apply inline-flex min-h-10 items-center justify-center rounded-md bg-wbx-card px-5 py-3 text-sm font-semibold leading-none text-white transition-colors hover:bg-wbx-elevated focus:outline-none focus:ring-2 focus:ring-wbx-blue/50;
+  }
+
+  .wbx-card-dark {
+    @apply rounded-xl border border-wbx-elevated bg-wbx-card;
+  }
+
+  .wbx-card-light {
+    @apply rounded-xl border border-wbx-hairline bg-white text-wbx-ink;
+  }
+
+  .wbx-number {
+    @apply font-num tabular-nums;
+  }
+
+  .wbx-label {
+    @apply text-xs font-semibold uppercase tracking-normal text-wbx-muted;
+  }
 }

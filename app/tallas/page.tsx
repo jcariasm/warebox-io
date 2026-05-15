@@ -306,7 +306,7 @@ export default function TallasPage() {
 
       <AdSlot />
 
-      <div className="max-w-[900px] mx-auto px-4 pb-16">
+      <div className="mx-auto mb-16 max-w-[900px] rounded-xl bg-wbx-soft px-4 py-8 text-wbx-ink sm:px-6">
         {/* Tabs */}
         <div className="flex gap-2 flex-wrap mb-6">
           {tabBtn('zapatos', 'Zapatos')}
