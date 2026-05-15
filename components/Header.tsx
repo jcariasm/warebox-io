@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-wbx-elevated bg-wbx-black/95 px-5 py-3 text-white backdrop-blur">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between">
         <Link href="/" className="text-xl font-extrabold tracking-normal">
-          ware<span className="text-wbx-accent">box</span>.io
+          <img src="/warebox-logo-negative.svg" alt="Warebox.io" className="h-7 w-auto sm:h-8" />
         </Link>
 
         <button

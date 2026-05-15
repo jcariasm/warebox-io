@@ -1,0 +1,13 @@
+<svg width="496" height="96" viewBox="0 0 496 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">warebox.io</title>
+  <desc id="desc">Negative transparent warebox.io logo for dark backgrounds.</desc>
+  <text x="0" y="66" fill="#FFFFFF" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="68" font-weight="900" letter-spacing="-5">warebox</text>
+  <text x="300" y="66" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="300" letter-spacing="-3">i</text>
+  <circle cx="330" cy="42" r="26" stroke="#FFFFFF" stroke-width="6"/>
+  <g transform="translate(396 12)" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 0 72 21v42L36 84 0 63V21L36 0Z"/>
+    <path d="M0 21 36 42 72 21"/>
+    <path d="M0 63 36 42 72 63"/>
+    <path d="M36 0v84"/>
+  </g>
+</svg>

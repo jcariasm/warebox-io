@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1280px] gap-8 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div>
           <Link href="/" className="text-xl font-extrabold tracking-normal text-wbx-ink">
-            ware<span className="text-wbx-accent">box</span>.io
+            <img src="/warebox-logo-positive.svg" alt="Warebox.io" className="h-8 w-auto sm:h-9" />
           </Link>
           <p className="mt-3 max-w-sm text-wbx-muted">
             Herramientas simples para viajeros mexicanos que quieren llegar preparados a las sedes de FIFA 2026.
