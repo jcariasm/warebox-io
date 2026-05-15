@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Warebox.io - Travel tools para mexicanos | FIFA 2026',
   description:
-    'Conversor de tallas MX-USA y calculadora de propinas para mexicanos que viajan al Mundial FIFA 2026 en Estados Unidos.',
+    'Herramientas de viaje para mexicanos que van al Mundial FIFA 2026 en Mexico, Estados Unidos y Canada.',
   alternates: { canonical: 'https://warebox.io' },
 };
 
@@ -18,7 +18,7 @@ const tools = [
   },
   {
     href: '/propinas',
-    title: 'Propinas USA',
+    title: 'Propinas en USA',
     desc: 'Restaurantes, bares, taxis y hoteles con total, split y equivalente en MXN.',
     metric: '18-22%',
     label: 'mesa',
@@ -42,10 +42,10 @@ export default function HomePage() {
         <div className="wbx-container grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <h1 className="max-w-3xl text-[clamp(38px,7vw,64px)] font-bold leading-[1.05] tracking-normal text-white">
-              Viaja a USA preparado para FIFA 2026
+              Viaja preparado al Mundial 2026
             </h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-wbx-muted sm:text-lg">
-              Warebox convierte las dudas de viaje en decisiones rapidas: que talla comprar, cuanto dejar de propina y como aterrizar cada gasto en pesos.
+              Warebox convierte las dudas de viaje por Mexico, Estados Unidos y Canada en decisiones rapidas: que talla comprar, cuanto dejar de propina y como aterrizar cada gasto en pesos.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/propinas" className="wbx-button-primary">
@@ -114,12 +114,12 @@ export default function HomePage() {
               Una app pequena para decisiones de alto roce
             </h2>
             <p className="mt-4 max-w-lg text-sm leading-7 text-wbx-muted">
-              El sitio responsivo trae SEO. La web app trae recurrencia: se abre en tienda, en restaurante, en Uber y al comprar merch del Mundial.
+              El sitio responsivo trae SEO. La web app trae recurrencia: se abre en aeropuertos, tiendas, restaurantes, estadios y traslados entre sedes.
             </p>
           </div>
           <div className="wbx-card-dark overflow-hidden">
             <div className="grid grid-cols-[1.2fr_1fr_0.6fr] border-b border-wbx-elevated px-4 py-3 text-xs font-semibold uppercase text-wbx-muted">
-              <span>Sede USA</span>
+              <span>Sede 2026</span>
               <span>Uso probable</span>
               <span className="text-right">Senal</span>
             </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl font-semibold text-white">Tools simples. Uso real durante el viaje.</h2>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-wbx-muted">
-                La primera version queda enfocada en tallas y propinas; desde ahi podemos sumar moneda, eSIM, seguros y guias por ciudad sin romper el producto.
+                La primera version queda enfocada en tallas y propinas; desde ahi podemos sumar moneda, eSIM, documentos y guias por sede sin romper el producto.
               </p>
             </div>
             <Link href="/tallas" className="wbx-button-primary">

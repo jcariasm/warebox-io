@@ -9,7 +9,7 @@ export default function Footer() {
             ware<span className="text-wbx-accent">box</span>.io
           </Link>
           <p className="mt-3 max-w-sm text-wbx-muted">
-            Herramientas simples para viajeros mexicanos que quieren llegar a USA preparados para FIFA 2026.
+            Herramientas simples para viajeros mexicanos que quieren llegar preparados a las sedes de FIFA 2026.
           </p>
         </div>
         <div>

@@ -5,11 +5,11 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Warebox.io - Travel tools para mexicanos en USA | FIFA 2026',
+    default: 'Warebox.io - Travel tools para mexicanos | FIFA 2026',
     template: '%s | Warebox.io',
   },
   description:
-    'Herramientas esenciales para viajeros mexicanos en Estados Unidos durante el Mundial FIFA 2026. Conversor de tallas y calculadora de propinas.',
+    'Herramientas esenciales para viajeros mexicanos durante el Mundial FIFA 2026 en Mexico, Estados Unidos y Canada.',
   metadataBase: new URL('https://warebox.io'),
   openGraph: {
     siteName: 'Warebox.io',
