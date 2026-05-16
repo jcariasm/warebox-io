@@ -65,13 +65,6 @@ const tools = [
     metric: '8',
     label: 'convers.',
   },
-  {
-    href: '/simuladores/sail-away',
-    title: 'Sail Away Growth',
-    desc: 'Simula potencial de crecimiento rentable y ruta comercial sugerida.',
-    metric: 'ROI',
-    label: 'ventas',
-  },
 ];
 
 const cityRows = [
@@ -106,7 +99,7 @@ export default function HomePage() {
             </div>
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-4">
               <div>
-                <div className="wbx-number text-3xl font-bold text-wbx-accent">9</div>
+                <div className="wbx-number text-3xl font-bold text-wbx-accent">8</div>
                 <div className="mt-1 text-xs text-wbx-muted">tools activos</div>
               </div>
               <div>
