@@ -19,6 +19,7 @@ export default function Footer() {
             <Link href="/impuestos">Impuestos de compra</Link>
             <Link href="/tallas">Conversor de tallas</Link>
             <Link href="/propinas">Calculadora de propinas</Link>
+            <Link href="/simuladores">Simuladores</Link>
             <Link href="/medidas">Medidas</Link>
           </div>
         </div>

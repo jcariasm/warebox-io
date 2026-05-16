@@ -34,6 +34,9 @@ export default function Header() {
           <Link href="/propinas" className="transition-colors hover:text-white">
             Propinas
           </Link>
+          <Link href="/simuladores" className="transition-colors hover:text-white">
+            Simuladores
+          </Link>
           <Link href="/checklist" className="transition-colors hover:text-white">
             Checklist
           </Link>
@@ -56,6 +59,9 @@ export default function Header() {
           </Link>
           <Link href="/propinas" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
             Propinas
+          </Link>
+          <Link href="/simuladores" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
+            Simuladores
           </Link>
           <Link href="/checklist" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
             Checklist
