@@ -21,14 +21,23 @@ export default function Header() {
           {menuOpen ? 'x' : '='}
         </button>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium text-wbx-muted md:flex">
+        <nav className="hidden items-center gap-5 text-sm font-medium text-wbx-muted md:flex">
+          <Link href="/moneda" className="transition-colors hover:text-white">
+            Moneda
+          </Link>
+          <Link href="/impuestos" className="transition-colors hover:text-white">
+            Tax
+          </Link>
           <Link href="/tallas" className="transition-colors hover:text-white">
             Tallas
           </Link>
           <Link href="/propinas" className="transition-colors hover:text-white">
             Propinas
           </Link>
-          <Link href="/propinas" className="wbx-button-primary ml-2">
+          <Link href="/checklist" className="transition-colors hover:text-white">
+            Checklist
+          </Link>
+          <Link href="/estadio" className="wbx-button-primary ml-2">
             Abrir app
           </Link>
         </nav>
@@ -39,10 +48,22 @@ export default function Header() {
           <Link href="/tallas" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
             Tallas
           </Link>
+          <Link href="/moneda" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
+            Moneda
+          </Link>
+          <Link href="/impuestos" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
+            Tax
+          </Link>
           <Link href="/propinas" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
             Propinas
           </Link>
-          <Link href="/propinas" className="wbx-button-primary mt-3" onClick={() => setMenuOpen(false)}>
+          <Link href="/checklist" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
+            Checklist
+          </Link>
+          <Link href="/estadio" className="rounded-lg bg-wbx-card px-4 py-3" onClick={() => setMenuOpen(false)}>
+            Estadio
+          </Link>
+          <Link href="/estadio" className="wbx-button-primary mt-3" onClick={() => setMenuOpen(false)}>
             Abrir app
           </Link>
         </nav>

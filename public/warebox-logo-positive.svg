@@ -2,9 +2,8 @@
   <title id="title">warebox.io</title>
   <desc id="desc">Positive warebox.io logo for light backgrounds.</desc>
   <text x="0" y="66" fill="#000000" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="68" font-weight="900" letter-spacing="-5">warebox</text>
-  <text x="300" y="66" fill="#111217" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="300" letter-spacing="-3">i</text>
-  <circle cx="330" cy="42" r="26" stroke="#111217" stroke-width="6"/>
-  <g transform="translate(396 12)" stroke="#111217" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <text x="304" y="66" fill="#111217" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="300" letter-spacing="-5">io</text>
+  <g transform="translate(398 12)" stroke="#111217" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M36 0 72 21v42L36 84 0 63V21L36 0Z"/>
     <path d="M0 21 36 42 72 21"/>
     <path d="M0 63 36 42 72 63"/>

@@ -10,6 +10,20 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    href: '/moneda',
+    title: 'Moneda MXN / USD / CAD',
+    desc: 'Convierte gastos entre los tres paises sede con tipos de cambio editables.',
+    metric: '3',
+    label: 'monedas',
+  },
+  {
+    href: '/impuestos',
+    title: 'Tax de compra',
+    desc: 'Calcula el precio final con sales tax o HST segun la sede.',
+    metric: '+tax',
+    label: 'checkout',
+  },
+  {
     href: '/tallas',
     title: 'Tallas MX / USA',
     desc: 'Zapatos, ropa y jerseys FIFA 2026 con equivalencias listas para comprar.',
@@ -22,6 +36,34 @@ const tools = [
     desc: 'Restaurantes, bares, taxis y hoteles con total, split y equivalente en MXN.',
     metric: '18-22%',
     label: 'mesa',
+  },
+  {
+    href: '/checklist',
+    title: 'Checklist de viaje',
+    desc: 'Documentos, boleto, power bank, hotel, seguro y medicinas.',
+    metric: '13',
+    label: 'items',
+  },
+  {
+    href: '/estadio',
+    title: 'Entrada al estadio',
+    desc: 'Que llevar, que evitar y como llegar con el QR listo.',
+    metric: 'QR',
+    label: 'ready',
+  },
+  {
+    href: '/horarios',
+    title: 'Horarios por sede',
+    desc: 'Convierte horarios entre Mexico, Pacifico, Centro y Este.',
+    metric: '4',
+    label: 'zonas',
+  },
+  {
+    href: '/medidas',
+    title: 'Medidas de viaje',
+    desc: 'Millas, kilometros, galones, litros, temperatura y equipaje.',
+    metric: '8',
+    label: 'convers.',
   },
 ];
 
@@ -48,8 +90,8 @@ export default function HomePage() {
               Warebox convierte las dudas de viaje por Mexico, Estados Unidos y Canada en decisiones rapidas: que talla comprar, cuanto dejar de propina y como aterrizar cada gasto en pesos.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/propinas" className="wbx-button-primary">
-                Calcular propina
+              <Link href="/moneda" className="wbx-button-primary">
+                Abrir herramientas
               </Link>
               <Link href="/tallas" className="wbx-button-secondary-dark">
                 Convertir tallas
@@ -57,16 +99,16 @@ export default function HomePage() {
             </div>
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-4">
               <div>
-                <div className="wbx-number text-3xl font-bold text-wbx-accent">2</div>
+                <div className="wbx-number text-3xl font-bold text-wbx-accent">8</div>
                 <div className="mt-1 text-xs text-wbx-muted">tools activos</div>
               </div>
               <div>
-                <div className="wbx-number text-3xl font-bold text-wbx-accent">10</div>
-                <div className="mt-1 text-xs text-wbx-muted">escenarios tip</div>
+                <div className="wbx-number text-3xl font-bold text-wbx-accent">3</div>
+                <div className="mt-1 text-xs text-wbx-muted">paises sede</div>
               </div>
               <div>
-                <div className="wbx-number text-3xl font-bold text-wbx-accent">3</div>
-                <div className="mt-1 text-xs text-wbx-muted">modos de talla</div>
+                <div className="wbx-number text-3xl font-bold text-wbx-accent">4</div>
+                <div className="mt-1 text-xs text-wbx-muted">zonas horario</div>
               </div>
             </div>
           </div>
@@ -84,7 +126,7 @@ export default function HomePage() {
                 <Link key={tool.href} href={tool.href} className="rounded-lg border border-wbx-elevated bg-wbx-black p-4 transition-colors hover:bg-wbx-elevated">
                   <div className="wbx-number text-3xl font-bold text-wbx-accent">{tool.metric}</div>
                   <div className="mt-1 text-xs font-semibold uppercase text-wbx-muted">{tool.label}</div>
-                  <h3 className="mt-5 text-lg font-semibold text-white">{tool.title}</h3>
+                  <h3 className="mt-5 text-base font-semibold text-white">{tool.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-wbx-muted">{tool.desc}</p>
                 </Link>
               ))}
@@ -142,11 +184,11 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl font-semibold text-white">Tools simples. Uso real durante el viaje.</h2>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-wbx-muted">
-                La primera version queda enfocada en tallas y propinas; desde ahi podemos sumar moneda, eSIM, documentos y guias por sede sin romper el producto.
+                La primera version ya cubre dinero, compras, medidas, horarios, estadio y checklist. El siguiente paso natural es wallet de boletos y reservas.
               </p>
             </div>
-            <Link href="/tallas" className="wbx-button-primary">
-              Empezar con tallas
+            <Link href="/checklist" className="wbx-button-primary">
+              Preparar checklist
             </Link>
           </div>
         </div>

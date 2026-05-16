@@ -15,8 +15,11 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold">Tools</h3>
           <div className="mt-3 flex flex-col gap-2 text-wbx-muted">
+            <Link href="/moneda">Moneda</Link>
+            <Link href="/impuestos">Impuestos de compra</Link>
             <Link href="/tallas">Conversor de tallas</Link>
             <Link href="/propinas">Calculadora de propinas</Link>
+            <Link href="/medidas">Medidas</Link>
           </div>
         </div>
         <div>
@@ -25,6 +28,8 @@ export default function Footer() {
             <span>Restaurantes</span>
             <span>Compras</span>
             <span>Estadios</span>
+            <Link href="/checklist">Checklist</Link>
+            <Link href="/horarios">Horarios por sede</Link>
           </div>
         </div>
         <div>
